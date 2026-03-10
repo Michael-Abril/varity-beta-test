@@ -1,0 +1,46 @@
+{
+  "name": "my-varity-app",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:debug": "playwright test --debug",
+    "deploy": "varitykit app deploy",
+    "postinstall": "node scripts/patch-sdk.js"
+  },
+  "dependencies": {
+    "@varity-labs/sdk": "^2.0.0-beta.1",
+    "@varity-labs/types": "^2.0.0-beta.1",
+    "@varity-labs/ui-kit": "^2.0.0-beta.1",
+    "lucide-react": "^0.400.0",
+    "next": "^15.0.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.0.0",
+    "husky": "^9.1.7",
+    "postcss": "^8.0.0",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "@varity-labs/types": "^2.0.0-beta.1",
+      "@varity-labs/sdk": "^2.0.0-beta.1",
+      "@varity-labs/ui-kit": "^2.0.0-beta.1"
+    }
+  }
+}

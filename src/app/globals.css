@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * ============================================================
+ * BRAND COLORS — Switch themes in seconds
+ * ============================================================
+ *
+ * HOW TO SWITCH:
+ *   1. Comment out the active "Blue" :root block below
+ *   2. Uncomment one of the preset blocks (Purple, Green, or Orange)
+ *   3. Save — your entire app updates instantly
+ *
+ * Or set your own colors using any Tailwind color palette:
+ *   https://tailwindcss.com/docs/customizing-colors
+ *
+ * ── Purple ──────────────────────────────────────────────────
+ * :root {
+ *   --color-primary-50: #faf5ff;  --color-primary-100: #f3e8ff;
+ *   --color-primary-200: #e9d5ff; --color-primary-300: #d8b4fe;
+ *   --color-primary-400: #c084fc; --color-primary-500: #a855f7;
+ *   --color-primary-600: #9333ea; --color-primary-700: #7e22ce;
+ *   --color-primary-800: #6b21a8; --color-primary-900: #581c87;
+ * }
+ *
+ * ── Green ───────────────────────────────────────────────────
+ * :root {
+ *   --color-primary-50: #ecfdf5;  --color-primary-100: #d1fae5;
+ *   --color-primary-200: #a7f3d0; --color-primary-300: #6ee7b7;
+ *   --color-primary-400: #34d399; --color-primary-500: #10b981;
+ *   --color-primary-600: #059669; --color-primary-700: #047857;
+ *   --color-primary-800: #065f46; --color-primary-900: #064e3b;
+ * }
+ *
+ * ── Orange ──────────────────────────────────────────────────
+ * :root {
+ *   --color-primary-50: #fff7ed;  --color-primary-100: #ffedd5;
+ *   --color-primary-200: #fed7aa; --color-primary-300: #fdba74;
+ *   --color-primary-400: #fb923c; --color-primary-500: #f97316;
+ *   --color-primary-600: #ea580c; --color-primary-700: #c2410c;
+ *   --color-primary-800: #9a3412; --color-primary-900: #7c2d12;
+ * }
+ * ============================================================
+ */
+:root {
+  /* Tailwind primary palette */
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #e0e7ff;
+  --color-primary-200: #c7d2fe;
+  --color-primary-300: #a5b4fc;
+  --color-primary-400: #818cf8;
+  --color-primary-500: #6366f1;
+  --color-primary-600: #4f46e5;
+  --color-primary-700: #4338ca;
+  --color-primary-800: #3730a3;
+  --color-primary-900: #312e81;
+
+  /* Varity UI-Kit theme bridge — aligns inline-style CSS vars with Tailwind palette */
+  --varity-primary-color: #4f46e5;
+  --varity-bg-primary: #f9fafb;
+  --varity-bg-sidebar: #ffffff;
+  --varity-bg-header: #ffffff;
+  --varity-bg-footer: #ffffff;
+  --varity-bg-secondary: #f3f4f6;
+  --varity-bg-hover: #eef2ff;
+  --varity-text-primary: #111827;
+  --varity-text-secondary: #6b7280;
+  --varity-border-color: #e5e7eb;
+  --varity-accent-color: #ef4444;
+}
+
+/* Typography Scale */
+.heading-hero {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.heading-section {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.heading-card {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+  .heading-hero {
+    font-size: 2.5rem;
+  }
+  .heading-section {
+    font-size: 1.875rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+.animate-fade-in-up-delay-1 {
+  animation: fade-in-up 0.6s ease-out 0.1s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-up-delay-2 {
+  animation: fade-in-up 0.6s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-up-delay-3 {
+  animation: fade-in-up 0.6s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-up-delay-4 {
+  animation: fade-in-up 0.6s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+@keyframes toast-enter {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes toast-progress {
+  from { width: 100%; }
+  to { width: 0%; }
+}
+
+@keyframes progress-stripes {
+  0% { background-position: 1rem 0; }
+  100% { background-position: 0 0; }
+}
