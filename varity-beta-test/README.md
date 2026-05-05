@@ -58,18 +58,27 @@ just a cheap pre-filter so we know what to expect.
 
 ## How to push everything to GitHub
 
+This needs to be run **on your local machine** (or anywhere `gh` is installed
+and authenticated). The 11 framework slot directories are gitignored in this
+repo, so a fresh clone won't contain them — `bootstrap-local.sh` re-creates
+them by re-cloning each upstream and resetting git history.
+
 1. Make sure `gh` is authenticated: `gh auth login`.
-2. From inside this directory, run:
+2. From inside this directory:
 
    ```bash
-   ./push-all.sh <your-github-username-or-org>
+   ./bootstrap-local.sh                                  # recreate the 11 slot repos locally
+   ./push-all.sh <your-github-username-or-org>           # create 11 GitHub repos and push
    ```
 
-   Add `--https` as a second arg if you don't have SSH keys set up:
+   Add `--https` as a second arg to `push-all.sh` if you don't have SSH keys
+   set up:
 
    ```bash
    ./push-all.sh <your-github-username-or-org> --https
    ```
+
+Both scripts are idempotent — safe to re-run.
 
 The script will, for each of the 11 slots:
 
@@ -117,8 +126,9 @@ without env wiring on the first try.
 
 | Path                    | Purpose                                                |
 |-------------------------|--------------------------------------------------------|
-| `js-ts/`, `python/`     | The 11 framework slots, each its own git repo          |
+| `js-ts/`, `python/`     | The 11 framework slots, each its own git repo (gitignored — recreated by `bootstrap-local.sh`) |
 | `DEPLOYMENT_MATRIX.md`  | Tracking spreadsheet for the dashboard run             |
+| `bootstrap-local.sh`    | Recreate the 11 slot repos by re-cloning each upstream |
 | `push-all.sh`           | Bulk-create GitHub repos and push each slot's `main`   |
 | `.logs/`                | Per-repo install/build logs from the local sanity pass |
 | `README.md`             | This file                                              |
