@@ -1,0 +1,30 @@
+=== js-ts/react (pm=npm) ===
+--- install ---
+
+up to date, audited 168 packages in 3s
+
+50 packages are looking for funding
+  run `npm fund` for details
+
+13 vulnerabilities (1 low, 5 moderate, 7 high)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+INSTALL_OK
+--- build ---
+
+> vite-react-ts-starter@1.0.0 build
+> tsc -b && vite build
+
+vite v6.3.5 building for production...
+transforming...
+✓ 54 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.99 kB │ gzip:  0.51 kB
+dist/assets/index-Cadh7A7L.css    4.44 kB │ gzip:  1.45 kB
+dist/assets/index-WfTTEjxD.js   227.06 kB │ gzip: 73.14 kB
+✓ built in 7.00s
+RESULT install=PASS build=PASS

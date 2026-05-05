@@ -1,0 +1,16 @@
+=== js-ts/hono (pm=npm) ===
+--- install ---
+
+up to date, audited 11 packages in 985ms
+
+2 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+INSTALL_OK
+--- build ---
+
+> build
+> tsc
+
+RESULT install=PASS build=PASS

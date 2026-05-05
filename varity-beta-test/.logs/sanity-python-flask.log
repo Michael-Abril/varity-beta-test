@@ -1,0 +1,209 @@
+=== python/flask (strategy=pip-req) ===
+--- venv ---
+--- install (pip-req) ---
+Looking in indexes: https://pypi.python.org/simple
+Collecting flask-cors>=3.0.6 (from -r requirements.txt (line 2))
+  Downloading flask_cors-6.0.2-py3-none-any.whl.metadata (5.3 kB)
+Collecting flask-migrate==2.1.1 (from -r requirements.txt (line 3))
+  Downloading Flask_Migrate-2.1.1-py2.py3-none-any.whl.metadata (946 bytes)
+Collecting flask-script==2.0.6 (from -r requirements.txt (line 4))
+  Downloading Flask-Script-2.0.6.tar.gz (43 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting flask-sqlalchemy==2.3.2 (from -r requirements.txt (line 5))
+  Downloading Flask_SQLAlchemy-2.3.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting flask>=1.0.2 (from -r requirements.txt (line 6))
+  Downloading flask-3.1.3-py3-none-any.whl.metadata (3.2 kB)
+Collecting gunicorn>=19.7.1 (from -r requirements.txt (line 7))
+  Downloading gunicorn-26.0.0-py3-none-any.whl.metadata (5.4 kB)
+Collecting psycopg2==2.7.5 (from -r requirements.txt (line 8))
+  Downloading psycopg2-2.7.5.tar.gz (426 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting sqlalchemy-utils==0.33.6 (from -r requirements.txt (line 9))
+  Downloading SQLAlchemy-Utils-0.33.6.tar.gz (126 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting sqlalchemy>=1.3.0 (from -r requirements.txt (line 10))
+  Downloading sqlalchemy-2.0.49-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (9.5 kB)
+Collecting testing.postgresql==1.3.0 (from -r requirements.txt (line 11))
+  Downloading testing.postgresql-1.3.0-py2.py3-none-any.whl.metadata (6.8 kB)
+Collecting alembic>=0.6 (from flask-migrate==2.1.1->-r requirements.txt (line 3))
+  Downloading alembic-1.18.4-py3-none-any.whl.metadata (7.2 kB)
+Collecting six (from sqlalchemy-utils==0.33.6->-r requirements.txt (line 9))
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting pg8000>=1.10 (from testing.postgresql==1.3.0->-r requirements.txt (line 11))
+  Downloading pg8000-1.31.5-py3-none-any.whl.metadata (88 kB)
+Collecting testing.common.database (from testing.postgresql==1.3.0->-r requirements.txt (line 11))
+  Downloading testing.common.database-2.0.3-py2.py3-none-any.whl.metadata (7.6 kB)
+Collecting Werkzeug>=0.7 (from flask-cors>=3.0.6->-r requirements.txt (line 2))
+  Downloading werkzeug-3.1.8-py3-none-any.whl.metadata (4.0 kB)
+Collecting blinker>=1.9.0 (from flask>=1.0.2->-r requirements.txt (line 6))
+  Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting click>=8.1.3 (from flask>=1.0.2->-r requirements.txt (line 6))
+  Downloading click-8.3.3-py3-none-any.whl.metadata (2.6 kB)
+Collecting itsdangerous>=2.2.0 (from flask>=1.0.2->-r requirements.txt (line 6))
+  Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting jinja2>=3.1.2 (from flask>=1.0.2->-r requirements.txt (line 6))
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting markupsafe>=2.1.1 (from flask>=1.0.2->-r requirements.txt (line 6))
+  Using cached markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Collecting packaging (from gunicorn>=19.7.1->-r requirements.txt (line 7))
+  Using cached packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+Collecting greenlet>=1 (from sqlalchemy>=1.3.0->-r requirements.txt (line 10))
+  Downloading greenlet-3.5.0-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (3.7 kB)
+Collecting typing-extensions>=4.6.0 (from sqlalchemy>=1.3.0->-r requirements.txt (line 10))
+  Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting Mako (from alembic>=0.6->flask-migrate==2.1.1->-r requirements.txt (line 3))
+  Downloading mako-1.3.12-py3-none-any.whl.metadata (2.9 kB)
+Collecting python-dateutil>=2.8.2 (from pg8000>=1.10->testing.postgresql==1.3.0->-r requirements.txt (line 11))
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting scramp>=1.4.5 (from pg8000>=1.10->testing.postgresql==1.3.0->-r requirements.txt (line 11))
+  Downloading scramp-1.4.8-py3-none-any.whl.metadata (18 kB)
+Collecting asn1crypto>=1.5.1 (from scramp>=1.4.5->pg8000>=1.10->testing.postgresql==1.3.0->-r requirements.txt (line 11))
+  Downloading asn1crypto-1.5.1-py2.py3-none-any.whl.metadata (13 kB)
+Downloading Flask_Migrate-2.1.1-py2.py3-none-any.whl (13 kB)
+Downloading Flask_SQLAlchemy-2.3.2-py2.py3-none-any.whl (16 kB)
+Downloading testing.postgresql-1.3.0-py2.py3-none-any.whl (8.9 kB)
+Downloading flask_cors-6.0.2-py3-none-any.whl (13 kB)
+Downloading flask-3.1.3-py3-none-any.whl (103 kB)
+Downloading gunicorn-26.0.0-py3-none-any.whl (212 kB)
+Downloading sqlalchemy-2.0.49-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 35.3 MB/s  0:00:00
+Downloading alembic-1.18.4-py3-none-any.whl (263 kB)
+Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Downloading click-8.3.3-py3-none-any.whl (110 kB)
+Downloading greenlet-3.5.0-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (615 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 615.2/615.2 kB 26.1 MB/s  0:00:00
+Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Downloading pg8000-1.31.5-py3-none-any.whl (57 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading scramp-1.4.8-py3-none-any.whl (13 kB)
+Downloading asn1crypto-1.5.1-py2.py3-none-any.whl (105 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Downloading werkzeug-3.1.8-py3-none-any.whl (226 kB)
+Downloading mako-1.3.12-py3-none-any.whl (78 kB)
+Using cached packaging-26.2-py3-none-any.whl (100 kB)
+Downloading testing.common.database-2.0.3-py2.py3-none-any.whl (10 kB)
+Building wheels for collected packages: flask-script, psycopg2, sqlalchemy-utils
+  Building wheel for flask-script (pyproject.toml): started
+  Building wheel for flask-script (pyproject.toml): finished with status 'done'
+  Created wheel for flask-script: filename=flask_script-2.0.6-py3-none-any.whl size=14117 sha256=bf934abb19ce195d3423ba41b8d9483e710763530521e99b95b065079295aec4
+  Stored in directory: /root/.cache/pip/wheels/a5/ce/0a/be0f1a9d96ecd772107fb97b1f69521a0196b7c70ff66b64b7
+  Building wheel for psycopg2 (pyproject.toml): started
+  Building wheel for psycopg2 (pyproject.toml): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × Building wheel for psycopg2 (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [80 lines of output]
+      /tmp/pip-build-env-ymkbqku1/overlay/lib/python3.11/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+      !!
+      
+              ********************************************************************************
+              Please consider removing the following classifiers in favor of a SPDX license expression:
+      
+              License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+              License :: OSI Approved :: Zope Public License
+      
+              See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+              ********************************************************************************
+      
+      !!
+        self._finalize_license_expression()
+      running bdist_wheel
+      running build
+      running build_py
+      creating build/lib.linux-x86_64-cpython-311/psycopg2
+      copying lib/_range.py -> build/lib.linux-x86_64-cpython-311/psycopg2
+      copying lib/pool.py -> build/lib.linux-x86_64-cpython-311/psycopg2
+      copying lib/errorcodes.py -> build/lib.linux-x86_64-cpython-311/psycopg2
+      copying lib/extensions.py -> build/lib.linux-x86_64-cpython-311/psycopg2
+      copying lib/tz.py -> build/lib.linux-x86_64-cpython-311/psycopg2
+      copying lib/__init__.py -> build/lib.linux-x86_64-cpython-311/psycopg2
+      copying lib/_json.py -> build/lib.linux-x86_64-cpython-311/psycopg2
+      copying lib/sql.py -> build/lib.linux-x86_64-cpython-311/psycopg2
+      copying lib/psycopg1.py -> build/lib.linux-x86_64-cpython-311/psycopg2
+      copying lib/_ipaddress.py -> build/lib.linux-x86_64-cpython-311/psycopg2
+      copying lib/extras.py -> build/lib.linux-x86_64-cpython-311/psycopg2
+      creating build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_notify.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_module.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/dbapi20_tpc.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_sql.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_with.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_async.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_cancel.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_async_keyword.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/__init__.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_bugX000.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_lobject.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_cursor.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/dbapi20.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_psycopg2_dbapi20.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_connection.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/testconfig.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_copy.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_errcodes.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_replication.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_ipaddress.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_green.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_dates.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_extras_dictcursor.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/testutils.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_fast_executemany.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_bug_gc.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_types_extras.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_transaction.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_quote.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      copying tests/test_types_basic.py -> build/lib.linux-x86_64-cpython-311/psycopg2/tests
+      running build_ext
+      building 'psycopg2._psycopg' extension
+      creating build/temp.linux-x86_64-cpython-311/psycopg
+      x86_64-linux-gnu-gcc -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -g -fwrapv -O2 -fPIC -DPSYCOPG_DEFAULT_PYDATETIME=1 "-DPSYCOPG_VERSION=2.7.5 (dt dec pq3 ext lo64)" -DPG_VERSION_NUM=160013 -DHAVE_LO64=1 -I/home/user/varity-beta-test/varity-beta-test/python/flask/.venv/include -I/usr/include/python3.11 -I. -I/usr/include/postgresql -I/usr/include/postgresql/16/server -c psycopg/adapter_asis.c -o build/temp.linux-x86_64-cpython-311/psycopg/adapter_asis.o -Wdeclaration-after-statement
+      In file included from psycopg/adapter_asis.c:27:
+      ./psycopg/psycopg.h:35:10: fatal error: libpq-fe.h: No such file or directory
+         35 | #include <libpq-fe.h>
+            |          ^~~~~~~~~~~~
+      compilation terminated.
+      
+      It appears you are missing some prerequisite to build the package from source.
+      
+      You may install a binary package by installing 'psycopg2-binary' from PyPI.
+      If you want to install psycopg2 from source, please install the packages
+      required for the build and try again.
+      
+      For further information please check the 'doc/src/install.rst' file (also at
+      <http://initd.org/psycopg/docs/install.html>).
+      
+      error: command '/usr/bin/x86_64-linux-gnu-gcc' failed with exit code 1
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for psycopg2
+  Building wheel for sqlalchemy-utils (pyproject.toml): started
+  Building wheel for sqlalchemy-utils (pyproject.toml): finished with status 'done'
+  Created wheel for sqlalchemy-utils: filename=sqlalchemy_utils-0.33.6-py2.py3-none-any.whl size=88606 sha256=21c8082410c7a39e44230b4a82c0a77911f00a5b9a965dfb7b69430fb5e31ea3
+  Stored in directory: /root/.cache/pip/wheels/a0/a4/02/30de0ae18565e036db519ec73dc2b0b53935a75ba5bcf67ba6
+Successfully built flask-script sqlalchemy-utils
+Failed to build psycopg2
+error: failed-wheel-build-for-install
+
+× Failed to build installable wheels for some pyproject.toml based projects
+╰─> psycopg2
+RESULT install=FAIL

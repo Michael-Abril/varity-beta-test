@@ -1,0 +1,4 @@
+# The 11 framework slots are independent git repos that get pushed to their
+# own GitHub repos via push-all.sh. Don't track them in the outer harness repo.
+js-ts/
+python/

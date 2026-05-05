@@ -1,0 +1,35 @@
+=== js-ts/nextjs (pm=npm) ===
+--- install ---
+
+up to date, audited 1476 packages in 8s
+
+337 packages are looking for funding
+  run `npm fund` for details
+
+13 moderate severity vulnerabilities
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+INSTALL_OK
+--- build ---
+
+> build
+> run-s db:migrate build:next
+
+
+> db:migrate
+> dotenv -c -- drizzle-kit migrate
+
+No config path provided, using default 'drizzle.config.ts'
+Reading config file '/home/user/varity-beta-test/varity-beta-test/js-ts/nextjs/drizzle.config.ts'
+Using 'pg' driver for database querying
+[⣷] applying migrations...[2K[1G[⣷] applying migrations...ERROR: "db:migrate" exited with 1.
+RESULT install=PASS build=FAIL

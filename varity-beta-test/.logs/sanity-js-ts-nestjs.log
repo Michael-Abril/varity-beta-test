@@ -1,0 +1,24 @@
+=== js-ts/nestjs (pm=npm) ===
+--- install ---
+
+up to date, audited 810 packages in 6s
+
+155 packages are looking for funding
+  run `npm fund` for details
+
+35 vulnerabilities (5 low, 18 moderate, 12 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+INSTALL_OK
+--- build ---
+
+> nest-typescript-starter@1.0.0 build
+> nest build
+
+RESULT install=PASS build=PASS
